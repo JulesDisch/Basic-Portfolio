@@ -1,6 +1,4 @@
 body {
-    
-    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 150%;
@@ -8,34 +6,26 @@ body {
     background: #4aaaa5;
     background-image: url("../images/dark-paths.png");
     height: 700px;
-    
   }
   
   header {
-    
     font-family: Georgia, "Times New Roman", Times, serif;
     background: #ffffff;
     border-color: #cccccc;
-   border-bottom:  2px  solid #bbb;
+    border-bottom:  2px  solid #bbb;
     height: 87px;
     clear: both;
     width: 100%;
     position: fixed;
     margin: -7px;
     top: 0;
-
     
   }
-    
   nav {
     width: 960px;
     margin: auto;
   }  
-    
-   
-    
-  
-  
+
   h1 {
     position: relative;
     height: 40px;
@@ -51,25 +41,18 @@ body {
     z-index: 1;
   }
   
-  
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        
         border-color: #666666;
-        background-color: #ffffff;
-       
+        background-color: #ffffff; 
     }
 
     li {
-        float: right;
-        
-               
+        float: right;         
     }
-
-    
 
     li a {
         display: block;
@@ -107,9 +90,9 @@ body {
    }   
       
   hr {
-        border: 1px solid #777777;
-     border-radius: 10px;
-     margin: 20px;
+    border: 1px solid #777777;
+    border-radius: 10px;
+    margin: 20px;
   }
   
   h2 {
@@ -127,15 +110,13 @@ body {
     width: 960px;
     height: 550px;
     margin-top: 100px;
-   
-    
+    border-radius: 5px;
+    padding: 20px;
     background-color: #ffffff;
     border-color: #dddddd;
-    
   }
   
   #main-bio,
-  #contact-info,
   #bio-image {
     float: left;
     background-color: #ffffff
@@ -143,10 +124,6 @@ body {
   
   #main-bio {
     width: 100%;
-  }
-  
-  #contact-info {
-    width: 30%;
   }
   
   #bio-image {
@@ -167,6 +144,36 @@ body {
       color: white;
       text-align: center;
       font-size: 12px;
-
   }
+form {
+    margin: 20px;
+}  
+  
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    font-family: Arial, Helvetica, sans-serif;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+    input[type=submit]:hover {
+    background-color: #043634;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
   
