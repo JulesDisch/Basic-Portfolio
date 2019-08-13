@@ -4,26 +4,32 @@ body {
     line-height: 150%;
     color: #777777;
     background: #4aaaa5;
-    background-image: url("../images/dark-paths.png");
-    height: 700px;
+    background-image: url("../images/dark-paths.png"); 
+  }
+
+  * {
+    box-sizing: border-box;
+    border-radius: 5px;
   }
   
   header {
     font-family: Georgia, "Times New Roman", Times, serif;
     background: #ffffff;
     border-color: #cccccc;
-    border-bottom:  2px  solid #bbb;
-    height: 87px;
+    border-bottom:  2px  solid;
     clear: both;
+    overflow:auto;
     width: 100%;
     position: fixed;
     margin: -7px;
     top: 0;
-    
+    z-index: 99;
   }
+  
   nav {
     width: 960px;
     margin: auto;
+    height: 80px;
   }  
 
   h1 {
@@ -41,6 +47,14 @@ body {
     z-index: 1;
   }
   
+  h1,
+  h2,
+  h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+  }
+
     ul {
         list-style-type: none;
         margin: 0;
@@ -55,20 +69,22 @@ body {
     }
 
     li a {
-        display: block;
+        display: inline-block;
         color: #777777;
         text-align: center;
-        padding: 0px 16px;
+        padding: 0px 15px;
+        height: 24px;
         border-right: 1px  solid #bbb;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         font-size: 24px;
+        border-radius: 0px;
     }
 
     li a:hover:not(.active) {
-        background-color: #ddd;
+        background-color: #4aaaa5;
     }
 
     li a.active {
@@ -78,15 +94,18 @@ body {
         background-color: #4aaaa5;
         font-family: Georgia, "Times New Roman", Times, serif;
         margin-bottom: 0px;
-        border-right: none;
+        border-radius: 5px;
+        /*border-right: none;*/
         margin-top: 0px;
-        padding: 30px 16px;
+        padding: 25px 25px;
+        text-align: center;
+        height: 80px
     }
       
    div {
        margin: auto;
        width: 960px;
-       height: 550px;
+       /*height: 550px;*/
    }   
       
   hr {
@@ -108,13 +127,18 @@ body {
   
   .container {
     width: 960px;
-    height: 550px;
+    height: 100%;
     margin-top: 100px;
+    margin-bottom: 100px;
     border-radius: 5px;
     padding: 20px;
     background-color: #ffffff;
     border-color: #dddddd;
+    clear: both;
+    overflow: auto;
+    text-align: left
   }
+  
   
   #main-bio,
   #bio-image {
@@ -133,6 +157,11 @@ body {
     margin-left: 20px;
   }
 
+#bio-text {
+  margin-right: 20px;
+  margin-left: 20px; 
+}
+
   footer
   {
       background-color: #666666;
@@ -144,6 +173,7 @@ body {
       color: white;
       text-align: center;
       font-size: 12px;
+      height: 50px;
   }
 form {
     margin: 20px;
@@ -176,4 +206,57 @@ input[type=text], select, textarea {
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  .work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 20px 20px 20px;
+    overflow: auto;
+  }
+  
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }    
+  .auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
   
